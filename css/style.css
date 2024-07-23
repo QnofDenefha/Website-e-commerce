@@ -1,0 +1,707 @@
+/*? google font roboto */
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+/*? google font roboto */
+
+*,
+html {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  background-color: #ebe6e6;
+}
+
+/*? my shorcut */
+.flx-clmn {
+  flex-direction: column;
+}
+.cntr {
+  display: flex;
+  align-items: center;
+}
+.space {
+  margin-right: 10px;
+}
+.spaceleft {
+  margin-left: 5px;
+}
+.spaceleft2 {
+  margin-left: 18px;
+}
+.spaceicons {
+  margin-right: -5px;
+}
+.margn-lft-5 {
+  margin-left: 5px;
+}
+.margn-lft-10 {
+  margin-left: 10px;
+}
+.margn-lft-18 {
+  margin-left: 18px;
+}
+.margn-lft-24 {
+  margin-left: 24px;
+}
+.margn-lft-30 {
+  margin-left: 30px;
+}
+.margin-left-55 {
+  margin-left: 55px;
+}
+
+.margn-top {
+  margin-top: 24px;
+}
+.margn-top-26 {
+  margin-top: 26px;
+}
+.margn-top-10 {
+  margin-top: 10px;
+}
+.margn-top-13 {
+  margin-top: 13px;
+}
+/*? my shorcut */
+
+/*! <=======================================================batas */
+
+/*? navigation shopee */
+
+.container-navigation {
+  background-image: linear-gradient(#f8452f, #fe6133);
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+}
+
+/*! nav 1 */
+
+.container-ul-1 {
+  margin-left: 55px;
+  margin-top: 0;
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.li-1 {
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.li-1:hover {
+  color: rgb(209, 203, 203);
+}
+
+.icons {
+  width: 15px;
+  height: 15px;
+}
+
+/*! nav 1 */
+
+/*? <===================batas */
+
+/*! nav 2 */
+.container-ul-2 {
+  margin-left: auto;
+  display: flex;
+  margin-right: 40px;
+  margin-top: 8px;
+  gap: 10px;
+}
+
+.li-2 {
+  list-style-type: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.li-2:hover {
+  color: rgb(209, 203, 203);
+}
+
+.icons2 {
+  width: 15px;
+  height: 15px;
+}
+.angel-small-down {
+  margin-left: -10px;
+  cursor: pointer;
+}
+
+/*! nav 2 */
+
+/*todo logo shopee & input product */
+
+.d-flex {
+  display: flex;
+  margin: -10px;
+}
+
+.logo {
+  width: 200px;
+  margin-left: 55px;
+}
+
+form {
+  position: relative;
+}
+.input-product {
+  display: block;
+  margin-top: 33px;
+  margin-left: 22px;
+  border: none;
+  border-radius: 3px;
+  width: 900px;
+  height: 45px;
+}
+.input-product:focus {
+  outline: none;
+}
+img.search {
+  position: absolute;
+  background-color: #fc5533;
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+  padding: 5px 20px 10px 20px;
+  margin-right: 34px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+img.search:hover {
+  transition: 1.5s ease-in-out;
+  transform: scaleY(0.9);
+}
+
+.new-div {
+  padding: 2px;
+  width: 75%;
+}
+
+.container-ul-3 {
+  display: flex;
+  gap: 8px;
+}
+
+.li-3 {
+  color: white;
+  list-style-type: none;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 300;
+  text-align: center;
+  margin-left: 24px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+img.icon-shopping {
+  width: 45px;
+  height: 45px;
+  margin-top: 30px;
+  margin-right: 110px;
+}
+
+/*todo logo shopee & input product */
+
+/*? navigation shopee */
+
+/*! <=======================================================batas */
+
+/*? content =============> */
+section.paralax1 {
+  height: 50vh;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 5px;
+  background-color: white;
+}
+
+/*! slide image */
+.mySlides {
+  display: none;
+  margin-top: 45px;
+}
+img {
+  vertical-align: middle;
+}
+
+/*? Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  height: 240px;
+  position: relative;
+  margin-left: 100px;
+}
+
+/*? dsply-flx */
+.dsply-flx {
+  display: flex;
+  height: 59vh;
+}
+
+/*? Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 63%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/*? Position the "next button" to the right */
+.next {
+  margin-right: 0;
+  margin-left: 710px;
+  border-radius: 3px 0 0 3px;
+}
+
+/*? On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgb(70, 66, 66);
+}
+
+/*? Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  margin-top: 4px;
+}
+
+/*? span */
+.span {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 300px;
+  margin-top: -20px;
+}
+
+/*? The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  /* background-color: #717171; */
+  background-color: white;
+}
+
+/*? Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*? On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+/*! slide image */
+
+/*todo img diskon shopee */
+.img-shopee {
+  margin-top: 45px;
+  margin-left: 320px;
+  width: 380px;
+  height: 110px;
+}
+.img-shopee2 {
+  margin-top: 5px;
+  margin-left: 320px;
+  width: 380px;
+  height: 115px;
+}
+/*todo img diskon shopee */
+
+/*todo pilihan */
+.container-pilihan {
+  margin-top: -50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  border-radius: 0 0 200px 200px;
+}
+.img-pilihan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.pilihan-img {
+  width: 40px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6,
+.image7,
+.image8,
+.image9,
+.image10 {
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.title-pilihan {
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/*todo pilihan */
+
+/*? content =============> */
+
+/*! <=======================================================batas */
+
+/*? cards ==============>*/
+.paralax2 {
+  width: 100%;
+  height: 105vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container-card {
+  gap: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.card-img {
+  width: 145px;
+  margin-left: 49px;
+  border-radius: 10px;
+}
+
+.card-item {
+  border: 2px dashed #cccccc;
+  border-radius: 10px;
+  width: 250px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+}
+.card-item:hover {
+  transition: 1.2s ease-in-out;
+  transform: scaleX(1.2);
+  border: 2px solid white;
+  background-color: #fe6133;
+  color: white;
+  .btn-buy {
+    border: 1px solid white;
+  }
+}
+
+.card-title {
+  text-align: left;
+  margin-left: 27px;
+  margin-top: 20px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.card-paragraf {
+  line-height: 19px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.btn-buy {
+  width: 130px;
+  margin-top: 20px;
+  margin-left: 25%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background-color: #fe6133;
+  color: white;
+}
+.btn-buy:hover {
+  transition: 1.3s ease-in-out;
+  transform: scaleX(0.9);
+  background-color: rgb(73, 73, 228);
+  box-shadow: 20px 18px 9px 1px blue;
+}
+
+/*? cards ==============>*/
+
+/*! <=======================================================batas */
+
+/*? banner Promo ==============>*/
+section.paralax3 {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-banner {
+  width: 90%;
+  padding: 8px;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/*? banner Promo ==============>*/
+
+/*! <=======================================================batas */
+
+/*? rekomendasi */
+section.paralax4 {
+  width: 100%;
+  height: 84vh;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.judul-rekomendasi {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.container-rekomendasi {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 75vh;
+}
+
+.card-rekomendasi {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.card-rekomendasi:hover {
+  transition: 2.2s ease-in-out;
+  transform: rotate(5deg);
+}
+
+.img-rekomendasi {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+/*? rekomendasi */
+
+/*! <=======================================================batas */
+
+/*? footer */
+section.footer-paralax5 {
+  width: 100%;
+  height: 35vh;
+  margin-top: 30px;
+  background-color: #fc5533;
+  border-radius: 10px;
+}
+
+.h1-footer {
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  background-color: #fc5533;
+  margin-bottom: 20px;
+}
+
+/*todo batas =====================> isi footer 1 */
+
+.footer {
+  display: flex;
+}
+
+.judul-footer {
+  margin-left: 25px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+.description-footer {
+  margin-top: 10px;
+  margin-left: 25px;
+  color: white;
+}
+
+/*? img description-footer */
+.img-ig-dibimging {
+  width: 20px;
+}
+.a-ig-dibimbing {
+  text-decoration: none;
+  color: aqua;
+}
+/*? img description-footer */
+
+/*todo batas =====================> isi footer 2 */
+
+.isi-footer2 {
+  height: 150px;
+}
+.judul-footer2 {
+  margin-left: 55px;
+  margin-top: 18px;
+  margin-bottom: 4px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+.container-description-footer2 {
+  display: flex;
+  gap: 10px;
+}
+
+.yt-dibimbing {
+  list-style-type: none;
+  color: white;
+  text-align: center;
+  width: 105px;
+  border-radius: 10px;
+  height: 90px;
+}
+.yt-dibimbing:hover {
+  background-color: white;
+  color: red;
+  transition: 2.3s ease-in-out;
+  transform: rotate(6deg);
+}
+
+.yt-Dea-Afrizal {
+  list-style-type: none;
+  color: white;
+  text-align: center;
+  width: 105px;
+  border-radius: 10px;
+  height: 90px;
+}
+.yt-Dea-Afrizal:hover {
+  background-color: white;
+  color: #f8452f;
+  transition: 2.3s ease-in-out;
+  transform: scaleX(1.1);
+}
+
+.yt-sandhika-galih {
+  list-style-type: none;
+  color: white;
+  text-align: center;
+  width: 105px;
+  border-radius: 10px;
+  height: 90px;
+}
+.yt-sandhika-galih:hover {
+  background-color: white;
+  color: red;
+  transition: 2.3s ease-in-out;
+  transform: rotate(6deg);
+}
+
+/*? ukuran img/ icon youtube */
+.img-youtube {
+  width: 40px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+/*? ukuran img/ icon youtube */
+
+/*todo batas =====================> isi footer 3 */
+
+.judul-footer3 {
+  margin-left: 85px;
+  margin-top: 15px;
+  font-size: 20px;
+  color: white;
+}
+.description-footer3 {
+  margin-top: 10px;
+  margin-left: 85px;
+  color: white;
+}
+
+.text-instagram-footer3 {
+  color: aqua;
+  margin: 5px;
+}
+
+/*? img-instagram-footer3 */
+.img-instagram-footer3 {
+  width: 20px;
+}
+/*? img-instagram-footer3 */
+
+/*todo batas =====================> */
+
+/*? footer */
